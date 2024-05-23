@@ -74,7 +74,7 @@ router.put('/:id', async (request, response) =>{
         response.status(500).send({message: error.message});
     }
 });
-
+//route for deleting a book
 router.delete('/:id', async(request, response) =>{
     try {
         const { id } = request.params;
